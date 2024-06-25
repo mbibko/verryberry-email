@@ -1,0 +1,21 @@
+.upages {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #dbdbdb;
+  z-index: 99;
+  background: #fff;
+  color: #000;
+  div {
+    text-align: right
+  }
+  a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    padding: 4px;
+    &:nth-child(even) {
+      background: #aaaaaa;
+    }
+  }
+}

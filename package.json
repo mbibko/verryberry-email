@@ -1,0 +1,18 @@
+{
+  "name": "verryberry-email",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-inline-css": "^4.0.0",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-mailgun": "^0.0.7",
+    "gulp-notify": "^4.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "html-attributes-remover": "^1.0.4",
+    "sass": "^1.77.6",
+    "through2": "^4.0.2"
+  }
+}

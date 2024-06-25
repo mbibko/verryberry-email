@@ -1,0 +1,43 @@
+{% extends "default.html" %} {% block content %}
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr>
+    <td class="content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+          <td align="center" class="title">Hello!</td>
+        </tr>
+        <tr>
+          <td height="26"></td>
+        </tr>
+        <tr>
+          <td align="center" style="font-size: 24px; ">To authorize on the site use</td>
+        </tr>
+        <tr>
+          <td height="80"></td>
+        </tr>
+        </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+          <td height="34"></td>
+        </tr>
+        </tbody>
+      </table>
+      <table class="table-list" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        {% for i in [["Login", "mail@mail.com"], ["Password", "F3fd34A"]] %}
+        <tr>
+          <td>{{i[0]}}</td>
+          <td align="right">{{i[1]}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{% endblock %}

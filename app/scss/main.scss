@@ -1,0 +1,116 @@
+@import 'buttons';
+@import 'upages';
+
+body,
+td,
+p,
+span,
+div,
+a {
+  font-family: arial;
+  font-size: 16px;
+  color: #182037;
+}
+
+a {
+  color: #182037;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-collapse: collapse;
+  // padding: 0;
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: -0.04em;
+  color: #010101;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: inside;
+
+  &.md li {
+    padding-bottom: 15px;
+  }
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+.container {
+  font-family: arial, sans-serif;
+  min-width: 450px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  & > tbody > tr > td {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}
+
+.content {
+  padding: 0;
+}
+
+.strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.bg {
+  border-radius: 6px;
+  background: #f5f5f5;
+}
+
+.table-list {
+  & > tbody > tr > td {
+    padding-bottom: 18px;
+    &:first-child {
+      color: #8b8f9b;
+    }
+  }
+  & > tfoot > tr > td {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.title {
+  display: block;
+  color: #182037;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  display: block;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+
+.footer {
+  td a {
+    font-size: 14px;
+  }
+}

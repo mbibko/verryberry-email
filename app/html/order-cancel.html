@@ -1,0 +1,55 @@
+{% extends "default.html" %} {% block content %}
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr>
+    <td class="content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+          <td align="center" class="title">Order canceled</td>
+        </tr>
+        <tr>
+          <td height="26"></td>
+        </tr>
+        <tr>
+          <td align="center" style="font-size: 24px; ">The money will be returned to your card</td>
+        </tr>
+        <tr>
+          <td align="center" style="padding-top: 23px">Order Number: <span style="color: #D52A3F">174</span></td>
+        </tr>
+        <tr>
+          <td height="80"></td>
+        </tr>
+        </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+          <td style="font-size: 24px; font-weight: 700">Order composition</td>
+        </tr>
+        <tr>
+          <td height="34"></td>
+        </tr>
+        </tbody>
+      </table>
+      <table class="table-list" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        {% for i in [["Goods", "6 220 "], ["Delivery", "450 "], ["Bonuses", "0 "], ["Promo code", "Not applied"], ["Partner card", "Not applied"]] %}
+        <tr>
+          <td>{{i[0]}}</td>
+          <td align="right">{{i[1]}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+        <tr>
+          <td>Итого</td>
+          <td align="right">6 220 </td>
+        </tr>
+        </tfoot>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{% endblock %}
