@@ -6,7 +6,7 @@ const gulpInlineCss = require("gulp-inline-css");
 const sendmail = require("gulp-mailgun");
 const through2 = require("through2");
 
-const AttributeRemover = require("html-attributes-remover").default;
+const AttributeRemover = require("./modules/html-attributes-remover").default;
 const attributeRemover = new AttributeRemover({
   htmlTags: ["div", "table", "td", "span", "h1", "p", "img", "a", "b", "i"],
   attributes: ["class"],
