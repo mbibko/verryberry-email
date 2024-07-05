@@ -4,3 +4,4 @@ sources
 app/maps
 Thumbs.db
 build
+.env
